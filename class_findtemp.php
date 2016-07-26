@@ -10,7 +10,7 @@
 
 
 		function convert_temp() {
-			if ($type == "1") {
+			if ($this->$type == "1") {
 				$conversion = (5*($temp - 32))/9;
 			}
 			else{

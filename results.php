@@ -11,6 +11,12 @@
 		$results = $findtemp->convert_temp();
 		
 
+	}elseif ($name == "distance") {
+		include("class_finddist.php");
+		$dist = $_GET["dist"];
+		$finddist = new FindDist($type, $dist);
+		$results = $finddist->convert_dist();
+		
 	}
 
 

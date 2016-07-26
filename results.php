@@ -16,7 +16,12 @@
 		$dist = $_GET["dist"];
 		$finddist = new FindDist($type, $dist);
 		$results = $finddist->convert_dist();
-		
+
+	}elseif ($name = "weight") {
+		include("class_findweight.php");
+		$weight = $_GET["weight"];
+		$findweight = new FindWeight($type, $weight);
+		$results = $findweight->convert_weight();
 	}
 
 

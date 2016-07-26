@@ -9,7 +9,7 @@
 		}
 
 
-		function convert_temp {
+		function convert_temp() {
 			if ($type == "1") {
 				$conversion = (5*(Float(@temp) - 32))/9;
 			}
@@ -18,7 +18,7 @@
 			}
 		
 
-			return $conversion
+			return $conversion;
 		}
 
 	}

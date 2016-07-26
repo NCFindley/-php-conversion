@@ -9,10 +9,12 @@
 	$type = "1";
 	$temp = "32";
 	$findtemp = new FindTemp($type,$temp);
+	echo $findtemp->type;
+	echo $findtemp->temp;
 	$results = $findtemp->convert_temp();
 
 	if ($results == 0){
-		echo "Success";
+		echo "Success, Results were  " . $results;
 	}else{
 		Echo "Failure, Results were " . $results;
 	}

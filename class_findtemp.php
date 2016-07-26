@@ -3,18 +3,18 @@
 
 		function __construct($type,$temp) {
 
-			$this->type = $type;
-			$this->temp = $temp;
+			$this->$type = ($type);
+			$this->$temp = floatval($temp);
 
 		}
 
 
 		function convert_temp() {
 			if ($type == "1") {
-				$conversion = (5*(Float(@temp) - 32))/9;
+				$conversion = (5*($temp - 32))/9;
 			}
 			else{
-				$conversion = (((9*Float(@temp))/5) + 32);
+				$conversion = (((9*$temp)/5) + 32);
 			}
 		
 

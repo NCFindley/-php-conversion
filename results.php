@@ -9,6 +9,7 @@
 		$temp = $_GET["temp"];
 		$findtemp = new FindTemp($type,$temp);
 		$results = $findtemp->convert_temp();
+		
 
 	}
 
